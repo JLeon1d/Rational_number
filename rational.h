@@ -30,7 +30,7 @@ public:
 
     friend Rational& operator*=(Rational& lhs, const Rational& rhs);
 
-    friend Rational& operator++(Rational& ratio);  // faster than += 1
+    friend Rational& operator++(Rational& ratio);
 
     friend Rational& operator--(Rational& ratio);
 
