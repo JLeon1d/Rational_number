@@ -128,9 +128,6 @@ std::istream& operator>>(std::istream& is, Rational& ratio) {
 }
 
 Rational& operator/=(Rational& lhs, const Rational& rhs) {
-    if (rhs.GetNumerator() == 0) {
-        throw RationalDivisionByZero{};
-    }
     lhs = lhs / rhs;
     return lhs;
 }
